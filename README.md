@@ -5,5 +5,5 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/xphstos/product-preview-card-component](https://github.com/xphstos/product-preview-card-component)
+- Live Site URL: [https://fc338f69ddb1212bb8644a395c624dcd91e4fe0f.surge.sh/](https://fc338f69ddb1212bb8644a395c624dcd91e4fe0f.surge.sh/)

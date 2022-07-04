@@ -72,8 +72,8 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   border-radius: var(--radius);
-  width: min(38rem, 100% - 2rem);
-  box-shadow: 0 0 0.25rem hsla(212, 21%, 14%, 0.1);
+  width: min(39rem, 100% - 2rem);
+  box-shadow: 0 0 0.5rem hsla(212, 21%, 14%, 0.05);
 }
 
 img {
@@ -102,17 +102,17 @@ h1 {
   font-size: 2rem;
   color: var(--black);
   line-height: 1.1;
-  margin-block: 2rem;
+  margin-block: clamp(1rem, 0.6307rem + 0.5089vw, 2rem)
+    clamp(1.5rem, 0.6307rem + 0.5089vw, 2rem);
 }
 
 p {
-  font-size: 0.875;
+  font-size: clamp(0.75rem, 0.6307rem + 0.5089vw, 0.875rem);
 }
 
 output {
   display: flex;
   align-items: center;
-  margin-block: 2rem;
   font-family: "Fraunces", serif;
   font-size: 2rem;
   color: var(--accent);
@@ -122,11 +122,11 @@ output {
 
 output::after {
   content: attr(data-original-price);
-  flex: 1;
   color: var(--grey);
   font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
   text-align: center;
+  padding-inline: 1.5rem;
   filter: greyscale(0);
   text-decoration: line-through;
 }
@@ -159,3 +159,23 @@ svg {
 }
 
 /*=====  End of PROJECT  ======*/
+
+/*=====================================
+=            MOBILE STYLES            =
+=======================================*/
+
+@media screen and (max-width: 551px) {
+  img {
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+
+  div {
+    border-radius: 0 0 var(--radius) var(--radius);
+  }
+
+  output {
+    margin-block: 3rem 2rem;
+  }
+}
+
+/*=====  End of MOBILE STYLES  ======*/
